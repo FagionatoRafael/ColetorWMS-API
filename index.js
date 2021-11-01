@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-// const { MongoClient } = require('mongodb');
 const coord = require('./Route/coordenadas')
 const app = express()
 const PORT = process.env.PORT || 8080;
