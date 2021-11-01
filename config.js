@@ -1,18 +1,16 @@
-const PORT = process.env.PORT || 8080;
-let envs;
+const {env} = require('process')
 
-if(PORT === 8080) {
-    const dotenv = require('dotenv');
-    const result = dotenv.config();
+// let envs;
 
-    if (!('error' in result)) {
-        envs = result.parsed;
-    }
-} else {
-    const _ = require('lodash');
-    
-    envs = {};
-    _.each(process.env, (value, key) => envs[key] = value);
-}
+// if (process.env.DBNAME !== 'production'){ 
+//     const dotenv = require('dotenv'); 
 
-module.exports = envs;
+//     const result = dotenv.config();
+//     envs = result.parsed;
+// } else {
+//     const _ = require('lodash');
+//     envs = {};
+//     _.each(process.env, (value, key) => envs[key] = value);
+// }
+console.log(env)
+// module.exports = envs;
