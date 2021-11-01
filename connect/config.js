@@ -1,8 +1,6 @@
 const { MongoClient } = require('mongodb');
-const PORT = process.env.PORT || 8080;
-if(PORT === 8080) {
-    require('dotenv').config()
-}
+require('dotenv').config()
+
  
 function Collection() {
     const url = process.env.URL || '';
