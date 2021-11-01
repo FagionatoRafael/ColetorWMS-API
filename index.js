@@ -13,5 +13,3 @@ app.use(coord)
 app.listen(PORT, () => {
     console.log(`localhost:${PORT}`)
 })
-
-//mongodb+srv://fagion:dbS$nh0@cluster0.cmszd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
